@@ -1,0 +1,16 @@
+# Maintainer: Michael Esch <eschmichael@yandex.com>
+
+pkgname=brother-mfc7880dw-cups-bin
+pkgver=1.4.0
+pkgrel=1
+pkgdesc="CUPS wrapper for Brother MFC-7880DW  printer"
+arch=("i686" "x86_64")
+url="https://support.brother.com/g/b/producttop.aspx?c=us_ot&lang=en&prod=mfc7860dw_all"
+license=("EULA")
+groups=("base-devel")
+source=("https://support.brother.com/g/b/downloadhowto.aspx?c=us_ot&lang=en&prod=mfc7860dw_all&os=128&dlid=dlf006287_000&flang=4&type3=561")
+md5sums=("1b15760a7c84634a56ebcf8f66d8be42")
+
+package() {
+	tar -xf data.tar.gz -C "${pkgdir}"
+}
