@@ -1,0 +1,1 @@
+driver for Brother MFC-7880DW CUPS as sourced from Brother Support
